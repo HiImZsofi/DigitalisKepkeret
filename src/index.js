@@ -11,5 +11,8 @@ $(document).ready(function() {
         $('.picture').attr("src", urlvalue); //img append to specific class
         $(".picture").css('width', imgwidth); //set the css to given number
         $('.picture').css('border', "solid " + bordervalue + "px " + colorvalue);  
+        $('.picture').css('margin', "auto");  
+        $('.picture').css('display', "block");  
+        $('.picture').css('margin-top', "20px");  
       });
 });

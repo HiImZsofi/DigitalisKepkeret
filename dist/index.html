@@ -9,26 +9,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="main.js"></script>
   </head>
-  <body>
+  <body class="dark-mode">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-xl-3">
+      <div class="row" id="headerrow">
+        <div class="col-lg-3 col-xl-3 headeritem">
           <label for="url">Kép url:</label>
           <input type="text" name="url" id="url" />
         </div>
 
-        <div class="col-lg-3 col-xl-3">
-          <label for="width">Kép szélessége</label>
+        <div class="col-lg-3 col-xl-3 headeritem">
+          <label for="width">Kép szélessége:</label>
           <input type="text" name="width" id="width" />
         </div>
 
-        <div class="col-lg-3 col-xl-3">
-          <label for="borderthickness">Képkeret vastagsága</label>
+        <div class="col-lg-3 col-xl-3 headeritem">
+          <label for="borderthickness">Keret:</label>
           <input type="text" name="borderthickness" id="borderthickness" />
         </div>
        
-        <div class="col-lg-3 col-xl-3">
-            <label for="bordercolor">Képkeret színe</label>
+        <div class="col-lg-3 col-xl-3 headeritem">
+            <label for="bordercolor">Képkeret színe:</label>
             <input type="color" name="bordercolor" id="bordercolor" />
         </div>
        
@@ -41,6 +41,18 @@
             <!--content by jquery-->
             <img class= "picture" src="" alt="">
         </div>
+      </div>
+
+      <div class="row" id="footer">
+            <div class="col-lg-4 col-xl-4">
+                <p class="text">Győri Zsófia</p>
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <p class="text">2/14T</p>
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <button>Dark mode</button>
+            </div>
       </div>
     </div>
   </body>
