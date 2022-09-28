@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-</head>
-<body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-xl-3">
+          <label for="url">Kép url:</label>
+          <input type="text" name="url" id="url" />
+        </div>
+
+        <div class="col-lg-3 col-xl-3">
+          <label for="width">Kép szélessége</label>
+          <input type="text" name="width" id="width" />
+        </div>
+
+        <div class="col-lg-3 col-xl-3">
+          <label for="borderthickness">Képkeret vastagsága</label>
+          <input type="text" name="borderthickness" id="borderthickness" />
+        </div>
+       
+        <div class="col-lg-3 col-xl-3">
+            <label for="bordercolor">Képkeret színe</label>
+            <input type="color" name="bordercolor" id="bordercolor" />
+        </div>
+       
+      <div class="row">
+        <button id="generate" class="btn btn-primary">Generál</button>
+      </div>
+
+      <div class="row">
+        <div id="imgholder">
+            <!--content by jquery-->
+            <img class= "picture" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
